@@ -1,0 +1,11 @@
+language: java
+jdk:
+-openjdk8
+
+addons:
+  sonarcloud:
+  organization: Z
+  token: Y
+script:
+-ant build
+-sonar-scanner
